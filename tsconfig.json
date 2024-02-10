@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "esNEXT",
+        "allowSyntheticDefaultImports": true,
+        "module": "es2022",
+        "moduleResolution": "node"
+    },
+    "include": ["src/**/*", "bin/**/*"]
+}
