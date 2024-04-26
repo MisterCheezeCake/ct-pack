@@ -11,4 +11,8 @@ NOTE: The actual command is `ct-pack`, not ct-packer
 
 `ct-pack build -r` Build the module and release it onto the ChatTriggers website
 
+## Info
 
+CT-Pack makes it super easy to build and release ChatTriggers modules. Gone are the days of having to painstakingly delete config files and create ct.js compliant zips. Now, just run a single command and you are done. Better yet, you can release your module to the ChatTriggers website without even leaving your terminal.
+
+To get started, install the ct-packer package with `npm i ct-packer -g`. You can either create a new module with the `ct-pack init` command, or add `ct-pack` to an existing project by adding a `ct-pack.json` file to the project root, and adding an array called `purge` to the file, with the names of any files you want purged from your build. You can also run ct-pack without a `ct-pack.json`, but then you won't be able to take advantage of purging and other cool features coming soon.
