@@ -18,7 +18,6 @@ export default async function packModule(name, config: config) {
     let currentSpinner: Spinner
     const dirpath = path.resolve(process.cwd());
     if (!(await exists(path.resolve(dirpath, "metadata.json")))) {
-        //throw new Error("This is not a ChatTriggers module, make sure to run the command inside the module folder iteself.");
         console.log(chalk.redBright("This is not a ChatTriggers module, make sure to run the command inside the module folder iteself."));
         process.exit(1)
     }

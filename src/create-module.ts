@@ -45,12 +45,9 @@ function createModule(name) {
     ]).then(async answers => {
         const __filename = fileURLToPath(import.meta.url);
         const __dirname = path.dirname(__filename)
-        console.log(__filename)
-        console.log(__dirname)
         let license
         if (answers.license) {
             const p = path.join(__dirname, "..", "data", "licenses.json")
-            console.log(p)
             const { licenses } = JSON.parse(await readFile(p, "utf8"))
             const answers2 = await inquirer.prompt([
                 {
@@ -61,7 +58,8 @@ function createModule(name) {
                             value: key
                         }
                     }),
-                    name: "lictype"
+                    name: "lictype",
+                    message: "Please select a license"
                 }
             ])
             license = answers2.lictype

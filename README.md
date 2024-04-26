@@ -19,6 +19,12 @@ To get started, install the ct-packer package with `npm i ct-packer -g`. You can
 
 ## Changelog
 
+1.1.1:
+
+```diff
+= Misc bug fixes
+```
+
 1.1.0:
 ```diff
 + Ability to add a license during module creation

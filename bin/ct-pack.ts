@@ -15,7 +15,7 @@ const program = new Command();
 program
     .name("ct-pack")
     .description("Utility for the building and distribution of ChatTriggers modulles")
-    .version("1.1.0")
+    .version("1.1.1")
 
 
 
