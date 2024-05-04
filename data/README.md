@@ -5,4 +5,5 @@ This folder contains license files and header data that CT-Pack can use when gen
 ## Variables
 
 [CT-PACK_YEAR] - Replaced by current year
+
 [CT-PACK_AUTHOR] - Replaced by author name
